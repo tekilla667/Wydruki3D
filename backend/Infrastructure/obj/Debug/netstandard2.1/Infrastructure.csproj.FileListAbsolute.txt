@@ -1,0 +1,12 @@
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Core.dll
+C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Core.pdb
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb

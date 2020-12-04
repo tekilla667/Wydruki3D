@@ -1,0 +1,205 @@
+[
+  {
+    "Name": "3DBenchy",
+    "Description": "The 3DBenchy appears to be nothing more than an adorable plastic boat, but it’s more than that. This little guy was designed specifically to test the limits of your machine and calibrate it to operate optimally. It’s one of the simplest—and most useful—3D printer projects you can start with.",
+    "TypeId": 3,
+    "Price": 172,
+    "PictureUrl": "pictures/products/95.jpg"
+  },
+  {
+    "Name": "Survival Whistle",
+    "Description": "Next in our list of cool things to 3D print is a simple project that can be completed in approximately one hour and will produce a whistle. It can produce an eye-popping 118db sound, perfect for camping or sporting events.",
+    "TypeId": 2,
+    "Price": 144,
+    "PictureUrl": "pictures/products/168.jpg"
+  },
+  {
+    "Name": "Sunglass Visor Clip",
+    "Description": "A handy and practical creation—and one of the simplest 3d printer designs on the list—this quick-to-create project allows you to affix your sunglasses to the visor of your car.",
+    "TypeId": 3,
+    "Price": 101,
+    "PictureUrl": "pictures/products/169.jpg"
+  },
+  {
+    "Name": "Earbud Case",
+    "Description": "If there’s one thing we can all agree on, it’s that earbud cords are a pain in the butt to keep organized. They constantly get tangled and eventually produce the dreaded earphone-crackle, rendering your treasured music-makers useless. This is a great example of what you can make with a 3D printer that can improve your everyday life.",
+    "TypeId": 3,
+    "Price": 296,
+    "PictureUrl": "pictures/products/283.jpg"
+  },
+  {
+    "Name": "Carabiner",
+    "Description": "This carabiner is surprisingly durable, with a strong frame and a flexible hinge. It can withstand up to 30kg of weight, which is pretty substantial for rendered plastic! Don’t, however, be tempted to use this to support your own weight, as they are not designed to support that much strain.",
+    "TypeId": 5,
+    "Price": 302,
+    "PictureUrl": "pictures/products/301.jpg"
+  },
+  {
+    "Name": "Flexi Rex",
+    "Description": "A simple toy originally created for Settlers of Catan, this project is durable and (in our opinion) cute. This is one of those 3D printer projects you could use in a few ways: gaming, office desk decoration, children’s toy, you name it! Plus, T-Rexes are (always!) cool.",
+    "TypeId": 4,
+    "Price": 349,
+    "PictureUrl": "pictures/products/352.jpg"
+  },
+  {
+    "Name": "Key Holder",
+    "Description": "Inspired by Swiss Army Knives, the Proteus Key Holder is a wonderful pocket device that will keep your keys all organized in a logical fashion. Hands-down one of the best things to 3D print, thanks to all the time you’ll save fishing through your pockets.",
+    "TypeId": 1,
+    "Price": 339,
+    "PictureUrl": "pictures/products/356.jpg"
+  },
+  {
+    "Name": "Pencil Holder",
+    "Description": "Organize your desk, and add a little flair at the same time! With these simple 3D printer designs, you’ll have all you need to generate truly unique desktop organizers that not only keep your stuff where it needs to be but look cool as well. You can 3D print a pencil holder that is unique to your own personality and have others mistaking your pencil holders again.",
+    "TypeId": 2,
+    "Price": 289,
+    "PictureUrl": "pictures/products/362.jpg"
+  },
+  {
+    "Name": "Headphone Stand",
+    "Description": "Get your headphones off your desk and onto a specially crafted hanger of your own design. Great for home and the office, these are the kinds of simple and effective 3D printer ideas that can make a big impact with very little effort.",
+    "TypeId": 3,
+    "Price": 46,
+    "PictureUrl": "pictures/products/423.jpg"
+  },
+  {
+    "Name": "Bowl",
+    "Description": "With a 3D printer you’ll be able to replace your dinnerware with new and original 3D printer designs in no time at all. Take this blueberry-themed bowl, for example. Why stop there? There are numerous other designs for plates and bowls out there to make eating at home a unique experience.",
+    "TypeId": 5,
+    "Price": 47,
+    "PictureUrl": "pictures/products/445.jpg"
+  },
+  {
+    "Name": "Planters",
+    "Description": "One of the cool things to 3D print is an abstract planter for your succulents and cacti. Why use traditional planters to hold your plants? There are cool 3D prints out there that don’t allow you to skip the traditional clay pots. These modular little guys are modern and fresh and guaranteed to make your mini-garden more attractive.",
+    "TypeId": 2,
+    "Price": 231,
+    "PictureUrl": "pictures/products/471.jpg"
+  },
+  {
+    "Name": "Platform Jack",
+    "Description": "While it won’t be holding up a car in a garage any time soon, this platform jack can still withstand a fairly reasonable amount of weight, allowing you access to pesky undersides. 3D print your own platform jack at home for an easy tool that’s great for painting models and other hobbyist tasks.",
+    "TypeId": 4,
+    "Price": 219,
+    "PictureUrl": "pictures/products/519.jpg"
+  },
+  {
+    "Name": "Measuring Cube",
+    "Description": "Get rid of those 72 measuring spoons from your utensil drawer and replace them all with a single implement! One of the most immediately useful and cool 3D prints in this list, it’ll make for an interesting tool that others will want when they see it.",
+    "TypeId": 4,
+    "Price": 192,
+    "PictureUrl": "pictures/products/527.jpg"
+  },
+  {
+    "Name": "Mitre Box",
+    "Description": "Mitre boxes are extremely useful when it comes to crafting. In just a few minutes, your 3D printer can spit one out and have you making exact cuts in your crafting projects in no time at all. Just add a blade, and you’re golden.",
+    "TypeId": 3,
+    "Price": 326,
+    "PictureUrl": "pictures/products/570.jpg"
+  },
+  {
+    "Name": "USB Holder",
+    "Description": "USB keys are useful devices—until you misplace them and lose all your precious data. Help prevent this by manufacturing your own desktop device to hold all your various keys! You can 3D print one of the most useful 3D printed objects available for your office.",
+    "TypeId": 1,
+    "Price": 256,
+    "PictureUrl": "pictures/products/620.jpg"
+  },
+  {
+    "Name": "Faucet Water Saver",
+    "Description": "We all need to do our part in cutting down on our water usage, right? Well, this water-saving attachment for your faucet is super quick to 3D print, a breeze to install, and uses very little material to create!",
+    "TypeId": 5,
+    "Price": 23,
+    "PictureUrl": "pictures/products/623.jpg"
+  },
+  {
+    "Name": "Cable Holder",
+    "Description": "Stop the tyranny of cords taking over your desk and entertainment unit and 3D print some space-saving cable management devices. You’ll cut back on desk clutter and all that cord-related aggravation. These are the blessed 3D printed objects that make life a little less annoying!",
+    "TypeId": 2,
+    "Price": 304,
+    "PictureUrl": "pictures/products/744.jpg"
+  },
+  {
+    "Name": "Catapult",
+    "Description": "Sometimes the office gets boring. Pass the time by constructing these cool things to 3d print: little catapults! Work on your (probably) lacking marksperson skills with these adorable wee “weapons” that can fire small projectiles up to two meters away (perfect for mastering your paper-in-wastebasket game).",
+    "TypeId": 1,
+    "Price": 263,
+    "PictureUrl": "pictures/products/804.jpg"
+  },
+  {
+    "Name": "Cutlery",
+    "Description": "One of the cool things to 3D print is your own set of cutlery. If you dig camping or just want a convenient set of small cutlery for use at the office or in the cafeteria, you can’t go wrong with this 3D printer design. They’re functional, portable, and take only a short time to create! The best part about this 3D is that they’re completely reusable.",
+    "TypeId": 2,
+    "Price": 205,
+    "PictureUrl": "pictures/products/863.jpg"
+  },
+  {
+    "Name": "Keychain Smartphone Stand",
+    "Description": "Nearly everyone these days has a smartphone, and we’ve likely all had moments where we wanted to prop up our phones for viewing video or photos and had to resort to piled books or whatever else is on hand. And it rarely works out as well as we hope! That makes this tiny project one of the coolest 3D printed objects on the list. Plus, they look like cats. Cats are good.",
+    "TypeId": 2,
+    "Price": 86,
+    "PictureUrl": "pictures/products/876.jpg"
+  },
+  {
+    "Name": "Comb",
+    "Description": "Small projects like this are what really make 3D printer designs a delight. Nearly all of us need some form of brush or comb to keep our untamed locks from becoming a tangled mess, and when it’s this simple to create, why not give this 3D print a shot?",
+    "TypeId": 2,
+    "Price": 24,
+    "PictureUrl": "pictures/products/886.jpg"
+  },
+  {
+    "Name": "Spirographs",
+    "Description": "A perennial childhood favorite, kids love them just as much today. Of course, adults can enjoy these toys, too. They could be just the ticket to break through some creative block!",
+    "TypeId": 5,
+    "Price": 349,
+    "PictureUrl": "pictures/products/930.jpg"
+  },
+  {
+    "Name": "Toothpaste Squeezer",
+    "Description": "Remember that Malcolm in the Middle scene where the family resorted to driving over the toothpaste to get the last little drops out of the tube? Now you can 3D print a device that will make squeezing out every bit of Colgate much easier.",
+    "TypeId": 3,
+    "Price": 170,
+    "PictureUrl": "pictures/products/932.jpg"
+  },
+  {
+    "Name": "Bookholder",
+    "Description": "This one gets our vote for one of the best 3D printer designs in this list. Bookworms! Want a nice, easy way to keep your pages propped open? Designed with larger books in mind, this tool is delightfully useful.",
+    "TypeId": 3,
+    "Price": 194,
+    "PictureUrl": "pictures/products/942.jpg"
+  },
+  {
+    "Name": "Bottle Opener",
+    "Description": "Another one of the cool things to 3D print is this awesome tool. With this device, you can open bottles—using only one hand! Keep one or two in your drawer at home, or make a few and keep them on hand as great host gifts.",
+    "TypeId": 4,
+    "Price": 49,
+    "PictureUrl": "pictures/products/955.jpg"
+  },
+  {
+    "Name": "Bookmarks",
+    "Description": "Stop dog-earing those pristine pages! These cool 3D prints allow you to remember exactly where you left off in your mystery novel or adventure yarn. Added bonus: Hedwig greets you every time you come back to reading!",
+    "TypeId": 2,
+    "Price": 247,
+    "PictureUrl": "pictures/products/960.jpg"
+  },
+  {
+    "Name": "Wallet",
+    "Description": "Today in you can do that?!: wallets made in a 3D printer. Why pay $50 a pop for a leather one when you can create one in your house in an hour, complete with card slots? This is one of those cool things to 3D print that we all could use. In addition, you can 3D print a design that is completely unique to you.",
+    "TypeId": 2,
+    "Price": 175,
+    "PictureUrl": "pictures/products/962.jpg"
+  },
+  {
+    "Name": "Business Card",
+    "Description": "A truly inspiring 3D printing idea, these pop-out business cards allow you to speak to clients in a way they won’t have experienced many times (if ever) before! Rather than a drab piece of cardboard, hand them a toy they can assemble that speaks much louder than a traditional printed card.",
+    "TypeId": 5,
+    "Price": 141,
+    "PictureUrl": "pictures/products/1000.jpg"
+  },
+  {
+    "Name": "Fidget Spinner",
+    "Description": "Can’t sit still? Searching for a 3D printer project to help you focus? Look no further. Fidget spinners are an excellent way to occupy your mind, and this 3D printed object will definitely do the trick.",
+    "TypeId": 3,
+    "Price": 36,
+    "PictureUrl": "pictures/products/1039.jpg"
+  }
+]

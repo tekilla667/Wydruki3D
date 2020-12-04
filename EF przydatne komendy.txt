@@ -1,0 +1,3 @@
+dotnet ef database drop -p Infrastructure -s API //usuwa plik .db
+dotnet ef migrations remove -p Infrastructure -s API //usuwa pliki z migracjami (tylko ostatni plik?)
+dotnet ef migrations add InitialCreate -o Migrations -p Infrastructure -s API // dodaje nowa migracje 
