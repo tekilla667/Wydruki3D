@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using Core.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Core.Interfaces
     public interface IStoreProductRepository
     {
         Task<StoreProduct> GetStoreProductByIdAsync(int id);
-        Task<IReadOnlyList<StoreProduct>> GetStoreProductsAsync();
+        Task<IReadOnlyList<StoreProduct>> GetStoreProductsAsync(QueryData data);
+        Task<IReadOnlyList<StoreProduct>> GetAllStoreProductsAsync();
     }
 }
