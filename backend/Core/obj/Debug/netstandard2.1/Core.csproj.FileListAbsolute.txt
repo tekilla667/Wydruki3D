@@ -4,7 +4,6 @@ C:\Inzynierka\backend\Core\bin\Debug\netstandard2.1\Core.pdb
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
-C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.dll
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.pdb
 E:\Inzynierka\backend\Core\bin\Debug\netstandard2.1\Core.deps.json
@@ -34,3 +33,4 @@ E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.dll
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.pdb
+C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache

@@ -1,7 +1,6 @@
 C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csprojAssemblyReference.cache
 C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
 C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
-C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache
 C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
 C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
 C:\Inzynierka\backend\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
@@ -46,3 +45,4 @@ E:\dwa\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure
 E:\dwa\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
 E:\dwa\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
 E:\dwa\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Inzynierka\backend\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache

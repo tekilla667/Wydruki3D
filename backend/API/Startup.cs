@@ -15,7 +15,10 @@ using Microsoft.Extensions.Logging;
 using Core.Interfaces;
 using Infrastructure.Repositories;
 using StackExchange.Redis;
-
+using Infrastructure.Identity;
+using Core.Entities;
+using Microsoft.AspNetCore.Identity;
+using API.Extensions;
 namespace API
 {
     public class Startup
@@ -40,7 +43,11 @@ namespace API
                 return ConnectionMultiplexer.Connect(configuration);
             });
             services.AddDbContext<StoreContext>(x => x.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
-           
+            services.AddDbContext<AppIdentityDbContext>(x =>
+            {
+                x.UseSqlite(_configuration.GetConnectionString("IdentityConnection"));
+            });
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
@@ -49,6 +56,7 @@ namespace API
                 });
 
             });
+            services.AddIdentity(_configuration);
             services.AddScoped<IStoreProductRepository, StoreProductRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddSwaggerGen(c =>
@@ -70,6 +78,7 @@ namespace API
             app.UseRouting();
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Drukarex API v1"); });
