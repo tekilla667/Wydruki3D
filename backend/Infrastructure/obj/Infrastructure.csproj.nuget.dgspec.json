@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
@@ -86,7 +84,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
               "C:\\Inzynierka\\backend\\Core\\Core.csproj": {
                 "projectPath": "C:\\Inzynierka\\backend\\Core\\Core.csproj"
@@ -102,7 +99,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",

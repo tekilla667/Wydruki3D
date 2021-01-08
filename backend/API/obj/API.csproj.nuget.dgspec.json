@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
               "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj"
@@ -42,7 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -107,7 +105,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -119,7 +116,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
@@ -167,7 +163,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
               "C:\\Inzynierka\\backend\\Core\\Core.csproj": {
                 "projectPath": "C:\\Inzynierka\\backend\\Core\\Core.csproj"
@@ -183,7 +178,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
