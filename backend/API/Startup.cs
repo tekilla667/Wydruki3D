@@ -19,6 +19,8 @@ using Infrastructure.Identity;
 using Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using API.Extensions;
+using Infrastructure.Services;
+
 namespace API
 {
     public class Startup
@@ -47,7 +49,7 @@ namespace API
             {
                 x.UseSqlite(_configuration.GetConnectionString("IdentityConnection"));
             });
-
+            services.AddScoped<ITokenService, TokenService>();
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
