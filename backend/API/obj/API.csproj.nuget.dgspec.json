@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Inzynierka\\backend\\API\\API.csproj": {}
+    "D:\\Inzynierka\\backend\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Inzynierka\\backend\\API\\API.csproj": {
+    "D:\\Inzynierka\\backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Inzynierka\\backend\\API\\API.csproj",
+        "projectUniqueName": "D:\\Inzynierka\\backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Inzynierka\\backend\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Testo\\.nuget\\packages\\",
-        "outputPath": "C:\\Inzynierka\\backend\\API\\obj\\",
+        "projectPath": "D:\\Inzynierka\\backend\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Galileo\\.nuget\\packages\\",
+        "outputPath": "D:\\Inzynierka\\backend\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Testo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Galileo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -83,17 +86,20 @@
         }
       }
     },
-    "C:\\Inzynierka\\backend\\Core\\Core.csproj": {
+    "D:\\Inzynierka\\backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Inzynierka\\backend\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Inzynierka\\backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Inzynierka\\backend\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Testo\\.nuget\\packages\\",
-        "outputPath": "C:\\Inzynierka\\backend\\Core\\obj\\",
+        "projectPath": "D:\\Inzynierka\\backend\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Galileo\\.nuget\\packages\\",
+        "outputPath": "D:\\Inzynierka\\backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Testo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Galileo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -141,17 +147,20 @@
         }
       }
     },
-    "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Testo\\.nuget\\packages\\",
-        "outputPath": "C:\\Inzynierka\\backend\\Infrastructure\\obj\\",
+        "projectPath": "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Galileo\\.nuget\\packages\\",
+        "outputPath": "D:\\Inzynierka\\backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Testo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Galileo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,8 +173,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Inzynierka\\backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Inzynierka\\backend\\Core\\Core.csproj"
+              "D:\\Inzynierka\\backend\\Core\\Core.csproj": {
+                "projectPath": "D:\\Inzynierka\\backend\\Core\\Core.csproj"
               }
             }
           }
