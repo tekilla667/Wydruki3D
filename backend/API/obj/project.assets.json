@@ -6249,23 +6249,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Galileo\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Testo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Inzynierka\\backend\\API\\API.csproj",
+      "projectUniqueName": "C:\\Inzynierka\\backend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Inzynierka\\backend\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Galileo\\.nuget\\packages\\",
-      "outputPath": "D:\\Inzynierka\\backend\\API\\obj\\",
+      "projectPath": "C:\\Inzynierka\\backend\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Testo\\.nuget\\packages\\",
+      "outputPath": "C:\\Inzynierka\\backend\\API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Galileo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Testo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6279,8 +6275,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Inzynierka\\backend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

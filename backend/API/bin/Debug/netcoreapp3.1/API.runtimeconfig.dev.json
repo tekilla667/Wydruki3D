@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Galileo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Galileo\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "C:\\Users\\Testo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Testo\\.nuget\\packages"
     ]
   }
 }

@@ -15,7 +15,7 @@ namespace API.DTO
         public string Email { get; set; }
         [Required]
         [RegularExpression("(?=^.{6,10}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\\s).*$", 
-            ErrorMessage = "Haslo musi miec przynajmniej 1 litere drukowana, 1 mala litere, 1 cyfre, 1 znak specjalny, 2 hieroglify egipskie, niemiecki rodzajnik i przynajmniej 6 znakow  ")]
+            ErrorMessage = "Haslo musi miec przynajmniej 1 litere drukowana, 1 mala litere, 1 cyfre, 1 znak specjalny, 2 hieroglify egipskie, niemiecki rodzajnik i przynajmniej 8 znakow  ")]
         public string Password { get; set; }
 
     }
