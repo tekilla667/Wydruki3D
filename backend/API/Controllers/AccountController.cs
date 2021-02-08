@@ -112,6 +112,15 @@ namespace API.Controllers
                 Email = registerDto.Email,
                 UserName = registerDto.Email
             };
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = token }, Request.Scheme);
+            Console.WriteLine("WERYFIKACJA ");
+            Console.WriteLine("WERYFIKACJA ");
+            Console.WriteLine("WERYFIKACJA ");
+            Console.WriteLine(" " + confirmationLink);
+            Console.WriteLine("WERYFIKACJA ");
+            Console.WriteLine("WERYFIKACJA ");
+            Console.WriteLine("WERYFIKACJA ");
             var result = await _userManager.CreateAsync(user, registerDto.Password);
             if (!result.Succeeded) return BadRequest();
             return new UserDTO
