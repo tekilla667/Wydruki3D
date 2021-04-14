@@ -1,0 +1,60 @@
+<body>
+<div class="fillscreen">
+<div class="container mb-5" style="padding-bottom: 100px;">
+    <div class="row">
+        <section class="col-3">
+            <h5 class="text-warning ml-3 mt-5">Sortowanie</h5>
+            <select class="custom-select" (change) = "setPriceSort($event.target.value); update()">
+                <option value="0">Dowolne</option>
+                <option value="1">Cena: Rosnąco</option>
+                <option value="2">Cena: Malejąco</option>
+            </select>
+            <div class="list-group">
+                <h5 class="text-warning ml-3 mt-5">Filtrowanie</h5>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" [class.active]="this.typeIdSearch === 0"(click)="setCurrentType(0);resetPageIndex(); update()"[routerLink]='["/store"]'>
+                  Wszystko
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" [class.active]="this.typeIdSearch === 1" (click)="setCurrentType(1);resetPageIndex(); update()"[routerLink]='["/store"]'>Gażdżety</a>
+                <a href="#" class="list-group-item list-group-item-action" [class.active]="this.typeIdSearch === 2"(click)="setCurrentType(2);resetPageIndex(); update()"[routerLink]='["/store"]'>Akcesoria do telefonu</a>
+                <a href="#" class="list-group-item list-group-item-action" [class.active]="this.typeIdSearch === 3"(click)="setCurrentType(3);resetPageIndex(); update()"[routerLink]='["/store"]'>Części zamienne</a>
+                <a href="#" class="list-group-item list-group-item-action"  [class.active]="this.typeIdSearch === 4"(click)="setCurrentType(4);resetPageIndex(); update()"[routerLink]='["/store"]'>Modele</a>
+              </div>
+        </section>
+        <section class="col-9 mt-3">
+            <div class="d-flex justify-content-between align-items-center pb-2">
+            <header>
+                <span>Widoczne <strong>10</strong> z <strong>30</strong> produktów</span>
+            </header>
+            <div class= "form-inline mt-2">
+                <input class="form-control mr-3" style="width: 300px" #search placeholder="Znajdź po nazwie" type="text">
+                <button class="btn btn-outline-primary my-2"(click)="setName() ; resetPageIndex(); update()"[routerLink]='["/store"]'>Wyszukaj</button>
+                <button class="btn btn-outline-primary my-2 ml-3" (click)="resetName() ;resetPageIndex(); update()"[routerLink]='["/store"]'>Resetuj</button>
+            </div>
+            </div>
+              <div class="container no-gutters">
+                <div class="row no-gutters" >
+                  <div class="col" style="max-width: 265px;" *ngFor="let product of products">
+                    <app-store-item [product]=product></app-store-item>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+    </div>
+    <div class="stickbottom">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item ">
+            <a class="page-link" href="#" (click)="changePageIndex(-1); update()"[routerLink]='["/store"]'>Poprzednie</a>
+          </li>
+          
+          <li class="page-item">
+            <a class="page-link" href="#"(click)="changePageIndex(1); update()"[routerLink]='["/store"]'>Następne</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</div>
+</div>
+
+</body>

@@ -1,0 +1,114 @@
+.fillscreen{
+    clear: both;
+    overflow: auto;
+    position: relative;
+    margin: 0;
+    min-height: 95vh;
+    height: auto;
+    min-width: 100%;
+    background: linear-gradient(to right, #e66465, #9198e5);
+}
+stl-model-viewer {
+    position: absolute;
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+    cursor: grab;
+  }
+  .stlcontainer{
+      position: relative;
+      height:550px;
+      width: 550px;
+      background-image: linear-gradient(to right top, #c224da, #b21bde, #a014e2, #8a11e7, #7012eb);
+      // margin-top: 10vh;
+      // margin-left: 8vw;
+      border-radius: 15px;
+      box-shadow: 10px 40px 60px rgba(0,0,0,.6);
+      transition: transform .3s ease-in-out;
+  }
+  .stlcontainer:active{
+    transform: scale(1.03) ;
+  }
+  .stlcontainer:hover{
+    transform: scale(1.03) ;
+  }
+.radio{
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+.radio__input{
+  display: none;
+}
+.radio__label{
+  padding: 8px 8px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #ffffff;
+  background: #7012eb;
+  cursor: pointer;
+  transition: background 0.1s;
+  width:130px;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+.radio__label:not(:last-of-type){
+  border-right: 1px solid #006B56;
+}
+.radio__input:checked + .radio__label{
+
+  background: #b21bde;
+}
+.ordercard{
+  background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 40%;
+margin: 0;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading--full-height {
+  align-items: center;
+  height: 100%;
+  width: 50px;
+}
+
+.loading::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 5px solid #dddddd;
+  border-top-color: #7012eb;
+  border-radius: 50%;
+  transform: rotate(0.16turn);
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  /* Safari support */
+  from {
+    transform: rotate(0turn);
+  }
+  
+  to {
+    transform: rotate(1turn);
+  }
+}
+.centertext{
+  text-align: center;
+}
+.pricebackground{
+  background-color:chocolate;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 4px 6px rgba(0,0,0,.6);
+}

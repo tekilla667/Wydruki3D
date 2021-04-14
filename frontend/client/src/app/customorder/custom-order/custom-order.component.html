@@ -1,0 +1,25 @@
+
+<div class="fillscreen">
+    <div class="content" id = "slide">
+        <div class="container mt-5">
+            <div class="row justify-content-md-center">
+                <h1 class="mt-4" style="justify-content: center;">Wybierz model do wydrukowania</h1>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-9 my-auto">
+                    <div class="mb-5" id="slideBot">
+                        <label for="formFile" class="form-label">
+                          
+                        </label>
+                        <input class="form-control" accept="application/stl" type="file" id="formFile" name="file" (change) = "handleFileInput($event.target.files)">
+                        
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg float-right" style="width: 200px" [routerLink]='["details"]'>Dalej</button>
+                </div>
+                <img id="slideLeft" src = "/assets/images/customorderimg.png" style="max-height: 250px; margin-bottom: 5px;" >
+                
+            </div>
+            
+        </div>
+   </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="slide" class="mt-3" [formGroup]="checkoutForm">
+    <h2>Wybierz swój sposób dostawy</h2>
+    <hr>
+    <div class="form-check" formGroupName = "deliveryForm" >
+        <div  *ngFor="let method of deliveryMethods; let i = index">
+            <input class="form-check-input" type="radio"  id={{method.id}} value={{method.id}} formControlName="deliveryMethod">
+            <label class="form-check-label" for={{method.id}}>
+              <h4>{{method.name}}</h4>
+              <h6>Cena: {{method.price}}zł</h6>
+              <p>Czas dostawy: {{method.deliveryTime}} </p>
+              <p style="font-style: italic;" >{{method.description}}</p>
+              <p></p>
+            </label>
+            <hr>
+          </div>
+          
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary float-right mb-5" style="width: 100px;"type="submit" cdkStepperNext (click)="setDeliveryMethod()">Dalej</button>
+        <button class="btn btn-primary float-right mb-5 mr-3" style="width: 100px;"type="submit" cdkStepperPrevious>Powrót</button>
+      </div>
+   
+</div>

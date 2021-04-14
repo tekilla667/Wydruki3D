@@ -1,0 +1,22 @@
+
+<div *ngIf="(basket$ | async) as basket" class=" mt-5">
+   <div class="headercontainer"><h5>Twoje zamówienie:</h5></div>
+    
+  <ul class="list-group mt-2">
+        <div *ngFor="let product of basket.basketItems">
+        
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{product.productName}}
+                <span class="badge bg-success rounded-pill">{{product.quantity}}</span>
+              </li>
+              
+        </div>
+        <li *ngIf="basket.customOrderItems.length>0" class="list-group-item d-flex justify-content-between align-items-center" style="font-style: italic;">
+            Zamówienia własne
+            <span class="badge bg-success rounded-pill">{{basket.customOrderItems.length}}</span>
+        </li>
+  </ul>
+    <div *ngIf = "(basketValue$ | async) as basketValue">
+        <p style="font-weight: bold; margin-left: 65%">Suma: {{basketValue.price}}</p>
+    </div>
+</div>

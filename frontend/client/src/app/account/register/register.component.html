@@ -1,0 +1,42 @@
+<body>
+  <div class="fillscreen">
+<div class="d-flex justify-content-center mt-5">
+    <img src = "/assets/images/3dlogo.png" width="72" height="57" style="text-align: center;">
+  </div>
+  
+  <div class="container-fluid">
+    <div class="justify-content-center max-width: 500px" >
+      <div class="row">
+        <div class="col">
+        
+       </div>
+     </div>
+    </div>
+  </div>
+  <main class = "form-signin ">
+    <div class="row justify-content-center">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <h1 class="h3 mb-3 fw-normal  text-center">Rejestracja</h1>
+      <label for="inputName" class="visually-hidden">Imię</label>
+      <input formControlName="displayName" id="inputName" class="form-control justify-content-center" placeholder="Imię" required="" autofocus="">
+      <label for="inputEmail" class="visually-hidden">Adres Email</label>
+      <input formControlName="email" type="email" id="inputEmail" class="form-control  justify-content-center" placeholder="Email" required="" autofocus="" >
+      <label for="inputPassword" class="visually-hidden mt-1">Hasło</label>
+      <input  formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Hasło" required="" >
+      <label for="inputReapetPassword" class="visually-hidden mt-1">Powtórz Hasło</label>
+      <input  formControlName="repeatPassword" type="password" id="inputRepeatPassword" class="form-control" placeholder="Powtórz Hasło" required="" >
+      <div class="checkbox mb-3">
+      </div>
+      <button [disabled]="registerForm.invalid||!checkPasswords()" class="w-100 btn btn-lg btn-primary " type="submit">Zarejestruj</button>
+    </form>
+  </div>
+  </main>
+  <p class="text-danger text-center mt-1" *ngIf="registerForm.get('email').dirty&&registerForm.get('email').invalid">Nieprawidłowy adres e-mail</p>
+  <p class="text-danger text-center mt-1" *ngIf="!checkPasswords()&&registerForm.get('repeatPassword').dirty">Hasła się nie powtarzają</p>
+  <p class="text-danger text-center mt-1" *ngIf="registerForm.get('password').dirty&&registerForm.get('password').invalid">Hasło powinno zawierać:</p>
+  <p class="text-danger text-center" *ngIf="registerForm.get('password').dirty&&registerForm.get('password').invalid">• Przynajmniej 1 dużą literę</p>
+  <p class="text-danger text-center " *ngIf="registerForm.get('password').dirty&&registerForm.get('password').invalid">• Przynajmniej 1 znak specjalny</p>
+  <p class="text-danger text-center" *ngIf="registerForm.get('password').dirty&&registerForm.get('password').invalid">• Przynajmniej 1 cyfrę</p>
+  <p class="text-danger text-center" *ngIf="registerForm.get('password').dirty&&registerForm.get('password').invalid">• Przynajmniej 8 znaków</p>
+</div>
+</body>

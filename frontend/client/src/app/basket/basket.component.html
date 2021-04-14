@@ -1,0 +1,71 @@
+<div class="fillscreen">
+<h1>Twój koszyk:</h1>
+<br>
+<div *ngIf="(basket$ | async) as basket">
+<table class="table table-hover table-striped" style="font-size:110%;">
+    <thead style="background-color:powderblue;">
+      <tr>
+        <th scope="col">Pozycja</th>
+        <th scope="col">Produkt</th>
+        <th scope="col">Cena</th>
+        <th scope="col">Ilość</th>
+        <th scope="col">Usuń</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of basket.basketItems; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td><img src="{{item.pictureUrl}}"width="50" height="50" class="mr-1">{{item.productName}}</td>
+        <td>{{item.price}} PLN</td>
+        <td><i class="fa  fa-minus-square mr-2 mt-2" (click)="decrement(item)" style="cursor: pointer;"></i><i class="mb-1">{{item.quantity}}</i><i class="fa fa-plus-square ml-2" style="cursor: pointer;"(click)="increment(item)"></i></td>
+        <td><i class="fa  fa-trash ml-3"  (click)="remove(item)" style="cursor: pointer;"></i></td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="basket.customOrderItems.length>0">
+    <h3 (click)="logBasket()"> Zamówienia własne </h3>
+    <table class="table table-hover table-striped" style="font-size:110%;">
+      <thead style="background-color:powderblue;">
+        <tr>
+          <th scope="col">Pozycja</th>
+          <th scope="col">Nazwa</th>
+          <th scope="col">Cena</th>
+          <th scope="col">Ilość</th>
+          <th scope="col">Kolor</th>
+          <th scope="col">Rodzaj filamentu</th>
+          <th scope="col">Procent wypełnienia</th>
+          <th scope="col">Usuń</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of basket.customOrderItems; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{item.modelName.split('==')[1]}}</td>
+          <td>{{(item.price*item.quantity).toFixed(2)}} PLN</td>
+          <td><i class="fa  fa-minus-square mr-2 mt-2" (click)="decrementCustomItem(item)" style="cursor: pointer;"></i><i class="mb-1">{{item.quantity}}</i><i class="fa fa-plus-square ml-2" style="cursor: pointer;"(click)="incrementCustomItem(item)"></i></td>
+          <td>{{getColorById(item.colorId)}}</td>
+          <td>{{getFillamentNameById(item.filamentId)}}</td>
+          <td>{{item.filingPercent}}%</td>
+          <td><i class="fa  fa-trash ml-3"  (click)="removeCustomItem(item)" style="cursor: pointer;"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div class="container"*ngIf="(basketValue$ | async) as basketValue">
+<div class="row justify-content-end">
+<div class="col-5"style="background-color:#6c6c93;"><h1 style="text-align:center;">Podsumowanie <i class="fa fa-shopping-basket"></i></h1></div>
+</div>
+<div class="row justify-content-end" style="height: 40px;">
+<div class="col-3 "style="text-align: center; font-style: italic; background-color:lightgray;" ><div class="mt-2">Suma:</div>  </div>
+<div class="col-2 " style="text-align: center; background-color:lightgray;"><div class="mt-2">{{basketValue.price.toFixed(2)}} PLN</div> </div>
+</div>
+<div class="row justify-content-end">
+<div class="mt-3"><button type="button" class="btn btn-primary btn-lg" (click)="Order()">Złóż zamówienie</button>
+
+  
+</div>  
+</div>
+</div>
+</div>
+</div>
+

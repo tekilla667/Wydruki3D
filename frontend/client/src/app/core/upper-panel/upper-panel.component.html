@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <img src = "/assets/images/3dlogo.png" style="max-height: 50px; margin-right: 5px;" alt="logo" [routerLink]='["/"]' >
+    <a class="navbar-brand" href="#">Drukarex</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          
+          <a class="nav-link" href="#" [routerLink]='["/"]'>
+            Start <span class="sr-only">(current)</span></a>
+            
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" [routerLink]='["/store"]'>Sklep </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="#" tabindex="-1" [routerLink]='["/customorder"]'>Zamówienie własne</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <a class="position-relative" [routerLink]='["/basket"]'>
+        <i class="fa fa-shopping-cart fa-2x mr-3"></i>
+        <div *ngIf="(basket$|async) as basket" class="cart-no">{{basket.basketItems.length}}</div>
+      </a>
+       
+      
+      </form>
+      <ng-container *ngIf="(currentUser$ | async) === null" >
+        <button type="button" class="btn btn-outline-success mr-2" [routerLink]='["/account/register"]'>Rejestracja<i class="fa fa-user-plus ml-1" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-primary " [routerLink]='["/account/login"]'>Zaloguj</button>
+      </ng-container>
+      <ng-container *ngIf="(currentUser$ | async) as user">
+        <div class="dropdown ml-4 mt-1 mr-3" dropdown >
+          <h5 dropdownToggle  class="dropdown-toggle  color: lightgrey;" style="cursor: pointer; color: white">
+            Witaj {{user.displayName}}! <span class="caret"></span>
+          </h5>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem"><a class="dropdown-item" [routerLink]='["/account/settings"]'><i class="fa fa-cog  mr-2"></i>Ustawienia</a></li>
+            <li role="menuitem"><a class="dropdown-item"[routerLink]='["/account/orders"]'><i class="fa fa-shopping-bag  mr-2"></i>Zamówienia </a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a (click)="logout()" class="dropdown-item" href="#"><i class="fa fa-sign-out mr-2"></i>Wyloguj</a>
+            </li>
+          </ul>
+        </div>
+      </ng-container>
+    </div>
+    
+  </nav>

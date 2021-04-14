@@ -1,0 +1,150 @@
+<div class="fillscreen">
+    <div class="bglayout">
+        <div class="container" style="padding-top: 50px;">
+            <div class="row">
+                <div class="col">
+                    <div class="list-group " style="width:220px">
+                        <button type="button" class="list-group-item list-group-item-action" aria-current="true" [class.active]="currentySelected==0" (click)="setCurrentlySelected(0)">
+                          Ustawienia ogólne
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action" [class.active]="currentySelected==1" (click)="setCurrentlySelected(1)">Zmień domyślny adres</button>
+                        <button type="button" class="list-group-item list-group-item-action" [class.active]="currentySelected==2"(click)="setCurrentlySelected(2)" [routerLink]='["/account/orders"]'>Moje zamówienia</button>
+                        <button type="button" class="list-group-item list-group-item-action" [class.active]="currentySelected==3"(click)="setCurrentlySelected(3)">Usuń konto</button>
+                      </div>
+                </div>
+                <div class="col" *ngIf="currentySelected==0">
+                    <h4>Zmień adres email</h4>
+                    <form [formGroup]="changeEmail">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nowy Adres E-mail</label>
+                          <input   formControlName="newEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <button type="button" class="btn btn-success btn-lg" style="margin-top: 10.4vh;" (click) = "requestEmailChange(); open(content)"  [disabled]="changeEmail.invalid">Zmień adres E-mail</button>
+                        </div>  
+                        </form>
+              
+                </div>
+                <div class="col" *ngIf="currentySelected==0">
+                    <h4>Zmień hasło</h4>
+                    <form [formGroup]="changePassword">
+                        <div class="mb-3">
+                            <label for="oldPassword" class="form-label">Stare Hasło</label>
+                            <input   formControlName="oldPassword" class="form-control" type="password" id="oldPassword" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="newPassword" class="form-label">Nowe Hasło</label>
+                            <input   formControlName="newPassword" class="form-control" type="password" id="newPassword" aria-describedby="emailHelp">
+                          </div>  
+                          <button type="button" class="btn btn-success btn-lg"  (click) = "requestPasswordChange()"  [disabled]="changePassword.invalid">Zmień hasło</button>
+                        </form>
+                        
+                </div>
+             
+                <div class="col" *ngIf="currentySelected==0">
+                  
+                </div>
+                <div class="col-3" *ngIf="currentySelected==1">
+                  <h3>Aktualny Adres:</h3>
+                  <div *ngIf="currentAddress">
+                      <h6>
+                      <p>{{currentAddress.firstName}} {{currentAddress.lastName}}</p>
+                      <p>ul. {{currentAddress.street}}</p>
+                      <p>{{currentAddress.postCode}} {{currentAddress.city}}</p></h6>
+                  </div>
+                  <div *ngIf="!currentAddress">
+                    <h5>Brak zapisanego adresu</h5>
+                </div>
+                
+                </div>
+                <div class="col-6" *ngIf="currentySelected==1">
+                    
+                    <h3 >Nowy Adres</h3>
+                    <form class="row g-3 needs-validation" [formGroup]="changeAddress">
+                    <div class="col-md-4" style="min-width: 200px;">
+                       
+                      <label for="validationCustom01" class="form-label" >Imię</label>
+                      <input type="text" class="form-control" id="validationCustom01" formControlName="firstName" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4" style="min-width: 200px;">
+                      <label for="validationCustom02" class="form-label">Nazwisko</label>
+                      <input type="text" class="form-control" id="validationCustom02" formControlName="lastName" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6" style="min-width: 200px;">
+                      <label for="validationCustom03" class="form-label">Miasto</label>
+                      <input type="text" class="form-control" id="validationCustom03" formControlName="city" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-6" style="min-width: 200px;">
+                        <label for="validationCustom03" class="form-label">Ulica i adres</label>
+                        <input type="text" class="form-control" id="validationCustom03" formControlName="street" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                   
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">Kod pocztowy</label>
+                      <input type="text" class="form-control" id="validationCustom05" formControlName="postCode" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                </form> 
+                <div class="col-12">
+                    <button class="btn btn-success float-right" style="width: 100px;"type="submit" (click) = "changeAddressRequest()" >Zapisz</button>
+                  </div>
+                </div>
+                
+                
+                <div class="col" *ngIf="currentySelected==2">Wybrano 2</div>
+                
+                
+                
+                
+                <div class="col-8" *ngIf="currentySelected==3">
+                    <h3>Panel usuwania konta</h3>
+                    Aby usunąć konto, wymagane jest podanie hasła
+                    <form [formGroup]="deleteAccountPassword">
+                        <div class="mb-3">
+                          <label for="exampleInputPassword" class="form-label"></label>
+                          <input   formControlName="password" class="form-control" id="exampleInputPassword" type="password" aria-describedby="emailHelp">
+                          <button type="button" class="btn btn-danger btn-lg" style="margin-top: 2vh;" (click) = "deleteUserAccountRequest()"  [disabled]="deleteAccountPassword.invalid">Usuń konto</button>
+                        </div>  
+                        </form>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Potwierdź nowy e-mail</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      
+        <div class="form-group">
+         
+          
+          Na nowy adres <a style="font-weight: bold;">{{newEmailToDisplay}}</a> wysłaliśmy link aktywacyjny.
+          Po kliknięciu w link nastąpi zmiana adresu e-mail.
+
+        </div>
+     
+    </div>
+    <div class="modal-footer">
+
+    </div>
+  </ng-template>

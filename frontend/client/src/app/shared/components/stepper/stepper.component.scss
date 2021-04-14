@@ -1,0 +1,60 @@
+button.nav-link {
+    background: #343a40;
+    border-radius: 0;
+    border: none;
+    padding: 1.20em;
+    color: lightgray;
+    
+    
+
+    &:focus {
+        outline: none;
+        background: lightgray;
+        color: #343a40;
+    }
+    &.active:hover {
+        background: lightgray;
+        color: #343a40;
+    }
+    & :active {
+        outline: none;
+        background: lightgray;
+        color: #343a40;
+    }
+    &.active:focus {
+        outline: none;
+        background: lightgray;  
+        color: #343a40;      
+    }
+    &:disabled:not(.active) {
+        color: #343a40;
+        background: lightgray;
+        color: #343a40;
+    }
+    &.active{
+        background: lightgray;
+        color: #343a40;
+    }
+    
+}
+li:first-child  > *{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+li:last-child > *{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#slide{
+    animation: 1s ease-out 0s 1 slideInFromLeftt;
+}
+@keyframes slideInFromLeftt {
+    0% {
+      transform: translateX(20%);
+       opacity: 0.3; 
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1; 
+    }
+  }

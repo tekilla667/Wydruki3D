@@ -1,0 +1,27 @@
+<div class="fillscreen">
+    <div class="container mt-5">
+        <div class="bglayout">
+            <div class="row">
+                <div class="col-8 mt-5 ml-5" id="slide">
+                    <app-stepper [isLinear]="false"  #appStepper>
+                        <cdk-step [label]="'Adres'">
+                            <app-checkout-address [checkoutForm]="checkoutForm"></app-checkout-address>
+                        </cdk-step>
+                        <cdk-step [label]="'Dostawa'">
+                            <app-checkout-delivery [checkoutForm]="checkoutForm"></app-checkout-delivery>
+                        </cdk-step>
+                        <cdk-step [label]="'Podsumowanie'">
+                            <app-checkout-review [checkoutForm]="checkoutForm"></app-checkout-review>
+                        </cdk-step>
+
+                        
+                    </app-stepper>
+                    
+                </div>
+                <div class="minbasket col-3">
+                <app-checkout-minibasket ></app-checkout-minibasket>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

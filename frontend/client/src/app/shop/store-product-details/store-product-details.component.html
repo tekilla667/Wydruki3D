@@ -1,0 +1,58 @@
+<body>
+<div class="fillscreen">
+        
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col " >
+              
+              <div class="stlcontainer" id="model" >
+                <stl-model-viewer [stlModels] = '["assets/standing.stl"]' [material] = "tempMaterial" id ="stl" ></stl-model-viewer>
+              </div>
+
+        
+            </div>
+             <div class="col ml-4 mt-2">
+                    <h1>{{product.name}}</h1>
+                    <p>{{product.description}}</p>
+                    <!-- <h3>Wybierz kolor filamentu</h3>
+              
+                    <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  (click)="getColorIndex()">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                
+                                Czerwony <i class="fa fa-square " style="color: red;"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"   (click)="getColorIndex()">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Zielony <i class="fa fa-square " style="color: green;"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"   (click)="getColorIndex()">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Niebieski <i class="fa fa-square " style="color: blue;"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"   (click)="getColorIndex()">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pomarańczowy <i class="fa fa-square " style="color: orange;"></i>
+                            </label>
+                          </div>
+                          <label for="customRange3" class="form-label mt-2"><h3>Procent wypełnienia {{fillamentPercent}}%</h3></label>
+                      <input type="range" class="form-range mt-2" style="width: 500px;" min="10" max="100" step="5" id="customRange3" (click)="fillamentChange()"> -->
+                        
+                      <div class="addContainer justify-content-center">
+                        <h3>Ilość: </h3>
+                        <i class="fa  fa-minus-square mr-2 mt-2 fa-3x" style="cursor: pointer; color: darkred;" (click)="decrement()"></i><i class="mb-1 fa-3x">{{quantity}}</i><i class="fa fa-plus-square ml-2 fa-3x" style="cursor: pointer; color: green;" (click)="increment()"></i>  
+                       </div> 
+                       <button type="button" class="btn btn-info btn-lg mt-2 " (click)="addToBasket()" ><i class="fa fa-shopping-cart mr-1"></i> Dodaj do koszyka</button>   
+                    </div>
+                 
+
+        </div>
+    </div>
+ </div> 
+</body>

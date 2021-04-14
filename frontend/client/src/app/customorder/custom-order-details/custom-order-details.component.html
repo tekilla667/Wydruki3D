@@ -1,0 +1,96 @@
+
+    <div class="fillscreen">
+            
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col " >
+                  
+                  <div class="stlcontainer" id="model" >
+                    
+                    <div *ngIf="(material$|async) as material">
+                      <stl-model-viewer [stlModels] = "[queryString]"  [material] = "material" id ="stl" ></stl-model-viewer>
+                    </div> 
+                    
+                   
+                    
+                      
+                   
+                  </div>
+    
+            
+                </div>
+               
+                 <div class="col ml-1 mt-2">
+                        <h1 *ngIf="this.productName as name">Twój model: <a style="font-style: italic;">{{name}}</a></h1>
+                       <div class="centertext"><h3>Typ filamentu</h3></div> 
+                        <div class = "radio">
+                         
+                            
+                                <input class="radio__input" type="radio" name="filRadio" id="filament1" (click)="assignActiveFilament(0)">
+                                <label class="radio__label" for="filament1"> 
+                                    PLA
+                                </label>
+                                <input class="radio__input" type="radio" name="filRadio" id="filament2" (click)="assignActiveFilament(1)">
+                                <label class="radio__label" for="filament2"> 
+                                    ABS
+                                </label>
+                                <input class="radio__input" type="radio" name="filRadio"  id="filament3" (click)="assignActiveFilament(2)">
+                                <label class="radio__label" for="filament3"> 
+                                    TPE
+                                </label>
+                                <input class="radio__input" type="radio" name="filRadio"  id="filament4" (click)="assignActiveFilament(3)">
+                                <label class="radio__label" for="filament4"> 
+                                    TPU
+                                </label>
+                               
+                         
+                        </div>
+
+                      <div class="centertext">
+                       <h3 class="mt-2">Kolor filamentu</h3></div>
+                        <div class="radio">
+                       
+                                <input class="radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  (click)="getColorIndex()">
+                                <label class="radio__label" for="flexRadioDefault1"> 
+                                    Czerwony <i class="fa fa-square " style="color: red;"></i>
+                                </label>
+                                <input class="radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"   (click)="getColorIndex()">
+                                <label class="radio__label" for="flexRadioDefault2">
+                                  Zielony <i class="fa fa-square " style="color: green;"></i>
+                                </label>
+                                <input class="radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"   (click)="getColorIndex()">
+                                <label class="radio__label" for="flexRadioDefault3">
+                                  Niebieski <i class="fa fa-square " style="color: blue;"></i>
+                                </label>
+                                <input class="radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"   (click)="getColorIndex()">
+                                <label class="radio__label" for="flexRadioDefault4">
+                                  Pomarańczowy <i class="fa fa-square " style="color: orange;"></i>
+                                </label>
+                              
+                               
+                        </div>
+                        <div class="centertext">
+                              <label for="customRange3" class="form-label mt-2"><h3>Procent wypełnienia {{fillamentPercent}}%</h3></label></div>
+                          <input type="range" class="form-range mt-2" style="width: 500px;" min="10" max="100" step="5" id="customRange3" (click)="fillamentChange()">
+                            <div *ngIf="(price$ | async) as price" style="margin-left: 300px;" class="mt-3 pricebackground">
+                              <h3 class="mt-1">Cena: {{price}}zł</h3>
+                            </div>
+                            <div *ngIf="!(price$ | async)" style="margin-left: 300px;" class="mt-3 pricebackground">
+                              <h3 >Cena:  
+                                <div style="display: inline-block;">
+                                <div class="loading loading--full-height" >
+                                  </div>
+                                </div>  
+                              </h3>
+                            </div>
+                          <div class="addContainer justify-content-center">
+                            <h3>Ilość: </h3>
+                            <i class="fa  fa-minus-square mr-2 mt-2 fa-3x" style="cursor: pointer; color: darkred;" (click)="decrement()"></i><i class="mb-1 fa-3x">{{quantity}}</i><i class="fa fa-plus-square ml-2 fa-3x" style="cursor: pointer; color: green;" (click)="increment()"></i>  
+                           </div> 
+                           <button type="button" class="btn btn-info btn-lg mt-2 " (click)="addToBasket()" ><i class="fa fa-shopping-cart mr-1"></i> Dodaj do koszyka</button>   
+                        </div>
+                        
+                        
+            </div>
+        </div>
+     </div> 

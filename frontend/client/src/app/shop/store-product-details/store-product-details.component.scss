@@ -1,0 +1,37 @@
+.fillscreen{
+    clear: both;
+    overflow: auto;
+    position: relative;
+    margin: 0;
+    min-height: 95vh;
+    height: auto;
+    min-width: 100%;
+    background: linear-gradient(to right, #e66465, #9198e5);
+}
+stl-model-viewer {
+    position: absolute;
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+    cursor: grab;
+  }
+  .stlcontainer{
+      position: relative;
+      height:550px;
+      width: 550px;
+      background-image: linear-gradient(to right top, #c224da, #b21bde, #a014e2, #8a11e7, #7012eb);
+      // margin-top: 10vh;
+      // margin-left: 8vw;
+      border-radius: 15px;
+      box-shadow: 10px 40px 60px rgba(0,0,0,.6);
+      transition: transform .3s ease-in-out;
+  }
+  .stlcontainer:active{
+    transform: scale(1.03) ;
+  }
+  .stlcontainer:hover{
+    transform: scale(1.03) ;
+  }

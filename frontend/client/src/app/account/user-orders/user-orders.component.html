@@ -1,0 +1,86 @@
+<div class="fillscreen">
+    <div class="bglayout">
+        <h2 style="margin-left: 1em; padding-top: 0.5em;">Twoje zamówienia <i class="fa fa-shopping-bag fa-2x"></i></h2>
+        <div *ngIf="userOrders" style="min-height: 400px;">
+            <table class="table  table-sm mt-3" >
+              <thead>
+                <tr class="firstelement">
+                  <th>Numer zamówienia</th>
+                  <th>Ilość gotowych wydruków</th>
+                  <th>Ilość własnych wydruków</th>
+                  <th>Data zamówienia</th>
+                  <th>Status zamówienia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let order of userOrders"  (click) = "open(content, order.id)"style= "cursor: pointer;" >
+                  <td>{{order.id}}</td>
+                  <td>{{order.orderItems.length}}</td>
+                  <td>{{order.customOrderItems.length}}</td>
+                  <td>{{(order.orderDate.split('T')[0])}}</td>
+                  <td>
+                     <a *ngIf="order.status=='0'">Oczekwianie na zapłatę</a>
+                     <a *ngIf="order.status=='1'">Płatność zaksięgowana</a>
+                     <a *ngIf="order.status=='2'">Płatność zakończona niepowodzeniem</a>
+                     <a *ngIf="order.status=='3'">Przesyłka wysłana</a>
+                    
+                    </td>
+                </tr>
+                
+              
+              </tbody>
+            </table>
+            
+          </div>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Szczegóły zamówienia</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      
+        <div class="form-group">
+         
+          <h6>Adres do wysyłki</h6>
+          <p class="my-0">{{orderDetails.shipToAddress.firstName}} {{orderDetails.shipToAddress.lastName}}</p>
+          <p class="my-0">ul. {{orderDetails.shipToAddress.street}}</p>
+          <p class="my-0">{{orderDetails.shipToAddress.city}}</p>
+          <p class="my-0">{{orderDetails.shipToAddress.postCode}}</p>
+          <div *ngIf="orderDetails.deliveryMethod">
+            <h6>Sposób dostawy</h6>
+            <p class="my-0">{{orderDetails.deliveryMethod.name}}</p>
+          </div>
+          
+          <h6>Zamówione Gotowe Produkty</h6>
+          <p *ngFor="let item of orderDetails.orderItems" class = "my-0">Produkt: {{item.itemOrdered.productName}} x {{item.quantity}}</p>
+          <p *ngIf="orderDetails.orderItems.length==0">Brak</p>
+          <h6>Zamówione Modele Własne</h6>
+          <p *ngFor="let item of orderDetails.customOrderItems" class = "my-0">Produkt: {{item.modelName.split('==')[1]}} x {{item.quantity}}</p>
+          <p *ngIf="orderDetails.customOrderItems.length==0">Brak</p>
+          <h5>Status zamówienia</h5>
+          <p *ngIf="orderDetails.status=='0'">
+            Oczekiwanie na zapłatę
+          </p>
+          <p *ngIf="orderDetails.status=='1'">
+            Płatność zaksięgowana
+          </p>
+          <p *ngIf="orderDetails.status=='2'">
+            Płatność zakończona niepowodzeniem
+          </p>
+          <p *ngIf="orderDetails.status=='3'">
+            Przesyłka została wysłana
+          </p>
+
+      
+        </div>
+     
+    </div>
+    <div class="modal-footer">
+
+    </div>
+  </ng-template>
