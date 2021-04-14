@@ -14,7 +14,7 @@ Całe API stworzone zostało w Asp.Net Core 3.1, natomiast klient w Angular 10. 
   Klient za pomocą strony może przeglądać katalog gotowych produktów dostępnych w sklepie. 
   ![image](https://user-images.githubusercontent.com/58048159/114783825-936e9180-9d7a-11eb-82c5-2228de97bffc.png)
 
-  Możliwe jest filtrowanie wg. kategorii oraz wyszukiwanie po nazwie konkretnego produktu. Lista produktów zaseedowana jest z pliku .CSV (dodawanie/usuwanie produktów możliwe jest również z Panelu Administratora). Wybrany produkt można dodać do koszyka
+  Możliwe jest filtrowanie wg. kategorii oraz wyszukiwanie po nazwie konkretnego produktu. Wybrany produkt można dodać do koszyka
   ![image](https://user-images.githubusercontent.com/58048159/114783992-d6306980-9d7a-11eb-859b-b9940c207778.png)
   
   ... lub podejrzeć szczegóły produktu. Możliwy jest podgląd 3D modelu oraz pełna manipulacja nim (przybliżanie, przesuwanie, obracanie)
@@ -27,6 +27,30 @@ Wszystkie dane przed wysłaniem na serwer są weryfikowane za pomocą Regex po s
 Po przesłaniu widoczne jest okno produktu:
 ![image](https://user-images.githubusercontent.com/58048159/114785204-9bc7cc00-9d7c-11eb-9b87-b1c67ec3899e.png)
 Możliwe jest wybranie rodzaju filamentu, jego koloru oraz procentu wypełnienia. W zależności od wybranych paramentrów, system dobiera cenę zamówienia i aktualizują ją na żywo.
-Produkt ze satysfakcjonującymi parametrami można dodać do koszyka. 
+Produkt ze satysfakcjonującymi parametrami można dodać do koszyka. Klikając w koszyk w górnym panelu, mamy podgląd znajdujących się w nim produktów, w tym także zamówień wlasnych
+![image](https://user-images.githubusercontent.com/58048159/114785680-53f57480-9d7d-11eb-979e-b56dc3c2f7ca.png)
+
+Po zrobieniu zakupów możliwe jest złożenie zamówienia
+Etap pierwszy: uzupełnienie danych do wysyłki
+
+![image](https://user-images.githubusercontent.com/58048159/114785781-75566080-9d7d-11eb-99f7-dedf5f717b84.png)
+
+Etap drugi: wybór metody dostawy
+
+![image](https://user-images.githubusercontent.com/58048159/114785909-9e76f100-9d7d-11eb-8c49-25a3ede347e7.png)
+
+Etap trzeci: Podsumowanie i zapłata(Przekierowanie do zewnętrznego serwisu obsługującego płatności)
+![image](https://user-images.githubusercontent.com/58048159/114785980-b51d4800-9d7d-11eb-8048-a67d93ee6c89.png)
+
+Po złożeniu zamówienia możemy podglądać status naszego zamówienia w panelu użytkownika (wszystkie zmiany statusu zamówienia klient otrzymuje na podany adres e-mail)
+![image](https://user-images.githubusercontent.com/58048159/114786106-e6961380-9d7d-11eb-8006-d33743752055.png)
+
+Dla administratora systemu został stworzony specjalny Panel Administracyjny. Umożliwa on podgląd na żywo statystyk sprzedaży, manipulacje dostępnymi produktami, zmianę statusu zamówień, oraz usuwanie kont użytkowników.
+![image](https://user-images.githubusercontent.com/58048159/114786407-54dad600-9d7e-11eb-9046-1500fc2d399a.png)
+
+
+![image](https://user-images.githubusercontent.com/58048159/114786440-67550f80-9d7e-11eb-94e9-083d48b921a0.png)
+![2021-04-15 00-08-29](https://user-images.githubusercontent.com/58048159/114786808-10036f00-9d7f-11eb-97da-38c1c09c15b6.gif)
+![image](https://user-images.githubusercontent.com/58048159/114786943-404b0d80-9d7f-11eb-860f-d1ca504c2ed3.png)
 
 
