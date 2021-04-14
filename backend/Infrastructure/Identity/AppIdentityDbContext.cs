@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Infrastructure.Identity
 {
-    public class AppIdentityDbContext : IdentityDbContext<User>
+    public class AppIdentityDbContext : IdentityDbContext<AppUser>
     {
         public AppIdentityDbContext(DbContextOptions<AppIdentityDbContext> options) : base(options)
         {
@@ -17,8 +17,8 @@ namespace Infrastructure.Identity
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<User>().HasOne(a => a.Address).WithOne(u => u.User)
-                .HasForeignKey<Address>(i => i.Id);
+          //  builder.Entity<AppUser>().HasOne(a => a.Address).WithOne(u => u.User)
+             //   .HasForeignKey<Address>(i => i.Id);
         }
     }
 }

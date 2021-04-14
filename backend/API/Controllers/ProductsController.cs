@@ -85,5 +85,15 @@ namespace API.Controllers
                 Price = prod.Price
             };
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var result = await _repo.DeleteStoreProduct(id);
+            if (result == 1)
+                return Ok();
+            else
+                return BadRequest();
+        }
+
     }
 }

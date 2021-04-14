@@ -10,18 +10,18 @@ namespace Infrastructure.Identity
 {
     public class AppIdentityDbContextSeed
     {
-        public static async Task SeedUserAsync(UserManager<User> userManager)
+        public static async Task SeedUserAsync(UserManager<AppUser> userManager)
         {
             if (!userManager.Users.Any())
             {
-                var user = new User
+                var user = new AppUser
                 {
                     DisplayName = "Pawel",
                     Email = "pawel@test.com",
                     UserName = "Uzytkownik",
                     Address = new Address
                     {
-                        Id = "1",
+                        Id = 1,
                         FirstName = "Pawel",
                         LastName = "Pawlowski",
                         Street = "Ulica",

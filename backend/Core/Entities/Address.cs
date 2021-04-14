@@ -4,7 +4,7 @@ namespace Core.Entities
 {
     public class Address
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Street { get; set; }
@@ -12,6 +12,6 @@ namespace Core.Entities
         public string PostCode { get; set; }
         [Required]
         public string AppUserId { get; set; }
-        public User User { get; set; }
+        public AppUser User { get; set; }
     }
 }

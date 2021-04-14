@@ -5,9 +5,10 @@ using System.Text;
 
 namespace Core.Entities
 {
-    public class User : IdentityUser
+    public class AppUser : IdentityUser
     {
         public string DisplayName { get; set; }
         public Address Address { get; set; }
+        public bool isAdmin { get; set; }
     }
 }

@@ -12,5 +12,6 @@ namespace Core.Interfaces
         Task<StoreProduct> GetStoreProductByIdAsync(int id);
         Task<IReadOnlyList<StoreProduct>> GetStoreProductsAsync(QueryData data);
         Task<IReadOnlyList<StoreProduct>> GetAllStoreProductsAsync();
+        Task<int> DeleteStoreProduct(int id);
     }
 }

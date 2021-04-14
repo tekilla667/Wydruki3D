@@ -33,4 +33,13 @@ E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.dll
 E:\dwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.pdb
+C:\inzdwa\Inzynierka\backend\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\inzdwa\Inzynierka\backend\Core\bin\Debug\netstandard2.1\Core.dll
+C:\inzdwa\Inzynierka\backend\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.dll
+C:\inzdwa\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.pdb
 C:\Inzynierka\backend\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache

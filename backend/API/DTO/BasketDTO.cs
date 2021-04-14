@@ -10,5 +10,6 @@ namespace API.DTO
     {
         public string Id { get; set; }
         public List<BasketItemDTO> BasketItems { get; set; } = new List<BasketItemDTO>();
+        public List<BasketCustomOrderItem> CustomOrderItems { get; set; } = new List<BasketCustomOrderItem>();
     }
 }

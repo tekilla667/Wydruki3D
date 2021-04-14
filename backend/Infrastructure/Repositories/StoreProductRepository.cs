@@ -20,19 +20,27 @@ namespace Infrastructure.Repositories
             _context = context;
         }
 
+        public async Task<int> DeleteStoreProduct(int id)
+        {
+            var toRemove = await _context.StoreProducts.FirstOrDefaultAsync(i => i.Id == id);
+            _context.StoreProducts.Remove(toRemove);
+            var result = await _context.SaveChangesAsync();
+            return result;
+        }
+
         public async Task<IReadOnlyList<StoreProduct>> GetAllStoreProductsAsync()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.StoreProducts.ToListAsync();
         }
 
         public async Task<StoreProduct> GetStoreProductByIdAsync(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.StoreProducts.FindAsync(id);
         }
 
         public async Task<IReadOnlyList<StoreProduct>> GetStoreProductsAsync(QueryData data)
         {
-            var query = _context.Products.AsQueryable();
+            var query = _context.StoreProducts.AsQueryable();
 
             if (data.prodId!=0)
             {
@@ -45,7 +53,7 @@ namespace Infrastructure.Repositories
                    
             if (data.typeIdSearch!=0)
             {
-                query = _context.Products.Where(x => x.TypeId == data.typeIdSearch).AsQueryable();
+                query = _context.StoreProducts.Where(x => x.TypeId == data.typeIdSearch).AsQueryable();
                
                 if (!String.IsNullOrEmpty(data.name))
                 {

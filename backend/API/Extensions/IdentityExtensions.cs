@@ -17,10 +17,10 @@ namespace API.Extensions
     {
         public static IServiceCollection AddIdentity(this IServiceCollection service, IConfiguration config)
         {
-            var builder = service.AddIdentityCore<User>();
+            var builder = service.AddIdentityCore<AppUser>();
             builder = new IdentityBuilder(builder.UserType, builder.Services);
             builder.AddEntityFrameworkStores<AppIdentityDbContext>();
-            builder.AddSignInManager<SignInManager<User>>();
+            builder.AddSignInManager<SignInManager<AppUser>>();
             builder.AddDefaultTokenProviders();
             service.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

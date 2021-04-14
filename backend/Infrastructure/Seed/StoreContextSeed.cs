@@ -18,13 +18,13 @@ namespace Infrastructure.Seed
         {
             try
             {
-                if(!context.Products.Any())
+                if(!context.StoreProducts.Any())
                 {
                     var Data = File.ReadAllText("../Infrastructure/Seed/Data/storeproducts.json");
                     var products = JsonSerializer.Deserialize<List<StoreProduct>>(Data);
                     foreach( var item in products)
                     {
-                        context.Products.Add(item);
+                        context.StoreProducts.Add(item);
                     }
                     await context.SaveChangesAsync();
                 }

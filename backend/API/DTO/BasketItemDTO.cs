@@ -22,5 +22,6 @@ namespace API.DTO
         public string PictureUrl { get; set; }
         [Required]
         public int TypeId { get; set; }
+
     }
 }

@@ -44,23 +44,33 @@ namespace API
                 var configuration = ConfigurationOptions.Parse(_configuration.GetConnectionString("Redis"), true);
                 return ConnectionMultiplexer.Connect(configuration);
             });
-            services.AddDbContext<StoreContext>(x => x.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<StoreContext>(x => x.UseNpgsql(_configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<AppIdentityDbContext>(x =>
             {
-                x.UseSqlite(_configuration.GetConnectionString("IdentityConnection"));
+                x.UseNpgsql(_configuration.GetConnectionString("IdentityConnection"));
             });
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IPriceCalculatorService, PriceCalculatorService>();
+            services.AddScoped<IEmailService, EmailService > ();
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                      policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                   
                 });
 
             });
             services.AddIdentity(_configuration);
             services.AddScoped<IStoreProductRepository, StoreProductRepository>();
+            
+            services.AddScoped<IOrderService, OrderService>();
+
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<IModelVolumeRepository, ModelVolumeRepository>();
+            services.AddScoped<IFillamentRepository, FillamentRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Drukarex API documentation", Version = "v1" });

@@ -27,6 +27,7 @@ namespace API.Controllers
             return Ok(basket ?? new Basket(id));
         }
         [HttpPost]
+
         public async Task<ActionResult<Basket>> UpdateBasket(BasketDTO basketDTO)
         {
             List<BasketItem> items = new List<BasketItem>();
@@ -40,12 +41,14 @@ namespace API.Controllers
                     Quantity = itemek.Quantity,
                     PictureUrl = itemek.PictureUrl,
                     TypeId = itemek.TypeId
+
                 });
 
-            }
+            }            
             var basketchecked = new Basket
             {
                 Id = basketDTO.Id,
+                CustomOrderItems = basketDTO.CustomOrderItems,
                 BasketItems = items
             };
 
