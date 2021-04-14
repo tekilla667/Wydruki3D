@@ -40,7 +40,7 @@ Etap drugi: wybór metody dostawy
 ![image](https://user-images.githubusercontent.com/58048159/114785909-9e76f100-9d7d-11eb-8c49-25a3ede347e7.png)
 
 Etap trzeci: Podsumowanie i zapłata(Przekierowanie do zewnętrznego serwisu obsługującego płatności)
-![image](https://user-images.githubusercontent.com/58048159/114785980-b51d4800-9d7d-11eb-8048-a67d93ee6c89.png)
+![image](https://user-images.githubusercontent.com/58048159/114787135-9324c500-9d7f-11eb-83c2-2f72c2e2c088.png)
 
 Po złożeniu zamówienia możemy podglądać status naszego zamówienia w panelu użytkownika (wszystkie zmiany statusu zamówienia klient otrzymuje na podany adres e-mail)
 ![image](https://user-images.githubusercontent.com/58048159/114786106-e6961380-9d7d-11eb-8006-d33743752055.png)
