@@ -40,9 +40,10 @@ Etap drugi: wybór metody dostawy
 ![image](https://user-images.githubusercontent.com/58048159/114785909-9e76f100-9d7d-11eb-8c49-25a3ede347e7.png)
 
 Etap trzeci: Podsumowanie i zapłata(Przekierowanie do zewnętrznego serwisu obsługującego płatności)
-![image](https://user-images.githubusercontent.com/58048159/114787135-9324c500-9d7f-11eb-83c2-2f72c2e2c088.png)
+![image](https://user-images.githubusercontent.com/58048159/114787274-d1ba7f80-9d7f-11eb-9ad6-c47c8a8a3595.png)
 
-Po złożeniu zamówienia możemy podglądać status naszego zamówienia w panelu użytkownika (wszystkie zmiany statusu zamówienia klient otrzymuje na podany adres e-mail)
+
+Po złożeniu zamówienia możemy sprawdzić status naszego zamówienia w panelu użytkownika (wszystkie zmiany statusu zamówienia klient otrzymuje na podany adres e-mail). Panel użytkownika umożliwia również zmianę adresu email (wymagana weryfikacja: link aktywacyjny na nowe konto), zmianę hasła(wymagane wprowadzenie starego hasła), zmianę domyślnego adresu do wysyłki oraz usunięcie konta.
 ![image](https://user-images.githubusercontent.com/58048159/114786106-e6961380-9d7d-11eb-8006-d33743752055.png)
 
 Dla administratora systemu został stworzony specjalny Panel Administracyjny. Umożliwa on podgląd na żywo statystyk sprzedaży, manipulacje dostępnymi produktami, zmianę statusu zamówień, oraz usuwanie kont użytkowników.
